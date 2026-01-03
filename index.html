@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بسمة جدة لنقل العفش</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Tahoma, Arial;
+}
+
+body{
+  background:#f5f5f5;
+  color:#333;
+}
+
+/* ===== Header ===== */
+header{
+  background:#fff;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo{
+  font-size:20px;
+  font-weight:bold;
+  color:#8b5a2b;
+}
+
+nav a{
+  margin-right:15px;
+  text-decoration:none;
+  color:#333;
+  font-weight:bold;
+}
+
+/* ===== Hero ===== */
+.hero{
+  position:relative;
+  height:90vh;
+  background:url("https://images.unsplash.com/photo-1603791440384-56cd371ee9a7") center/cover no-repeat;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(139,90,43,0.75);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:30px;
+  color:#fff;
+}
+
+.hero h1{font-size:36px;}
+.hero h2{font-size:22px;margin:10px 0;}
+.hero p{max-width:500px;line-height:1.8;margin-bottom:25px;}
+
+.hero-buttons a{
+  display:inline-block;
+  padding:12px 25px;
+  margin-left:10px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.call{background:#fff;color:#333;}
+.whatsapp{background:#25d366;color:#fff;}
+
+.hero-buttons a:hover{
+  transform:scale(1.05);
+}
+
+/* ===== Sections ===== */
+section{
+  padding:60px 20px;
+  background:#fff;
+  margin-top:20px;
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:30px;
+  color:#8b5a2b;
+}
+
+.services,.why{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#f9f9f9;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ===== Contact ===== */
+.contact{
+  background:#8b5a2b;
+  color:#fff;
+  text-align:center;
+}
+
+.contact a{
+  color:#fff;
+  text-decoration:none;
+  font-size:18px;
+  display:block;
+  margin-top:10px;
+}
+
+/* ===== Map ===== */
+.map-box{
+  width:100%;
+  height:400px;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.map-btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 25px;
+  background:#8b5a2b;
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.map-btn:hover{
+  background:#6f451f;
+}
+
+/* ===== Animations ===== */
+.fade-up{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 0.8s ease;
+}
+
+.fade-up.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ===== Floating Buttons ===== */
+.floating{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  z-index:999;
+}
+
+.floating a{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:22px;
+  text-decoration:none;
+}
+
+.float-call{background:#333;}
+.float-whatsapp{background:#25d366;}
+
+/* ===== Footer ===== */
+footer{
+  background:#222;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">بسمة جدة لنقل العفش</div>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#about">من نحن</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#contact">تواصل</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <div class="hero-content">
+    <h1>نقل العفش بجدة</h1>
+    <h2>بسمة جدة لنقل العفش</h2>
+    <p>شركة متخصصة في نقل العفش والأثاث بجدة بأعلى جودة وأفضل أسعار.</p>
+    <div class="hero-buttons">
+      <a href="tel:0549491055" class="call">اتصل الآن</a>
+      <a href="https://wa.me/966549491055" class="whatsapp">واتساب</a>
+    </div>
+  </div>
+</div>
+
+<section id="about" class="fade-up">
+  <h2>من نحن</h2>
+  <p style="text-align:center;max-width:700px;margin:auto;line-height:1.9">
+    نحن شركة بسمة جدة لنقل العفش نعمل بخبرة طويلة وفريق محترف.
+  </p>
+</section>
+
+<section id="services" class="fade-up">
+  <h2>خدماتنا</h2>
+  <div class="services">
+    <div class="card">نقل عفش المنازل</div>
+    <div class="card">نقل الشركات</div>
+    <div class="card">فك وتركيب</div>
+    <div class="card">تغليف آمن</div>
+  </div>
+</section>
+
+<section class="fade-up">
+  <h2>لماذا نحن</h2>
+  <div class="why">
+    <div class="card">خبرة</div>
+    <div class="card">سرعة</div>
+    <div class="card">أمان</div>
+    <div class="card">أسعار ممتازة</div>
+  </div>
+</section>
+
+<section class="fade-up">
+  <h2>موقعنا في جدة</h2>
+  <div class="map-box">
+    <iframe 
+      src="https://www.google.com/maps?q=Jeddah%20Saudi%20Arabia&output=embed"
+      width="100%" height="100%" style="border:0;" loading="lazy">
+    </iframe>
+  </div>
+  <div style="text-align:center">
+    <a class="map-btn" href="https://maps.google.com?q=Jeddah" target="_blank">
+      افتح في خرائط جوجل
+    </a>
+  </div>
+</section>
+
+<section class="contact fade-up" id="contact">
+  <h2>تواصل معنا</h2>
+  <a href="tel:0549491055">📞 0549491055</a>
+  <a href="https://wa.me/966549491055">💬 واتساب مباشر</a>
+</section>
+
+<div class="floating">
+  <a href="tel:0549491055" class="float-call">📞</a>
+  <a href="https://wa.me/966549491055" class="float-whatsapp">💬</a>
+</div>
+
+<footer>
+  © جميع الحقوق محفوظة | بسمة جدة لنقل العفش
+</footer>
+
+<script>
+const elements = document.querySelectorAll('.fade-up');
+
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    if(position < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
